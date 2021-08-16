@@ -7,6 +7,7 @@ Material master must be set up for rotomat storage type and bin.
 Rotomat storage type will be set up in transaction OMKY to enable data send to external system.
 Both TO creation and cancellation will be initiated from our system SAP.
 Rotomat will respond back a confirmation to our requests.
+
 Once the goods movement is posted, IDOC is converted to .txt using FILE setup and .txt file is placed in outbound SAP iface (AL11 directory).
 Middleware system Azure Data Factory (ADF) will pick this file from iface in set time and places in their server.
 Cloud server access will be granted to Hanel Rotomat and for exchange of files.
